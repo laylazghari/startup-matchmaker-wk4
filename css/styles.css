@@ -1,0 +1,301 @@
+/*
+
+Colours:
+
+Light yellow:   #FFF653;
+Mid yellow:     #CEC441;
+
+Light grey:     #C6C6C6;
+Mid grey:       #AAAAAA;
+Dark grey:      #999999;
+
+*/
+
+/*******************
+  BASE SETUP
+*******************/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+* {
+	list-style-type: none;
+}
+
+
+/*******************
+  FONT SETUP
+*******************/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #c6c6c6;
+	}
+
+h1, 
+.teasers-block h2, 
+.strapline p {
+	font-family: 'Merriweather', sans-serif;
+}
+
+
+.cta, 
+nav li:nth-child(-n+2) a {
+	font-family: 'Oswald' sans-serif;
+	text-transform: uppercase;
+}
+
+/*******************
+ GENERAL STYLES
+*******************/
+
+html {
+	font-size: 20px;
+} 
+
+a {
+	text-decoration: none;
+}
+
+.intro-content p,
+.teasers-block p {
+line-height: 1.6;
+}
+
+.cta {
+	color: #000;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	
+}
+
+.cta-yellow {
+	background-color: #FFF653;
+	border-bottom: 3px solid  #CEC441;
+}
+
+.cta-grey {
+	background-color: #C6C6C6;
+	border-bottom: 3px solid  #999;
+}
+/*******************
+HEADER STYLES
+*******************/
+header {
+	background-color: #000;
+	color: #FFF653;
+	padding: 20px 0;
+	border-bottom: 5px solid #FFF653;
+}
+
+h1 {
+	font-size: 30px;
+	letter-spacing: 1px;
+	margin: 0;
+}
+
+header nav {
+	float: right;
+}
+
+header ul {
+	margin: 0 10px;
+}
+
+header li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+header li:last-child {
+	margin: 0;
+}
+
+
+header a {
+	color: #fff;
+}
+
+/*******************
+STRAPLINE STYLES
+*******************/
+
+.strapline {
+	background-color: #C6C6C6;
+	border-top: 1px solid #aaa;
+	box-shadow: 0 1px 5px rgba (0,0,0,0.5);
+	padding: 20px 0;
+	text-align: center;
+	position: relative;
+
+}
+
+.strapline p {
+	font-size: 26px;
+	font-style: italic;
+	margin: 0;
+
+
+}
+
+del {
+	color: #999;
+}
+
+ins {
+	border-bottom: 3px solid #FFF653;
+	text-decoration: none;
+}
+
+/*******************
+INTRO STYLES
+*******************/
+
+.intro {
+	background-image: url(../images/coworking.jpg);
+	background-size: cover;
+	padding: 20px 0;
+}
+
+.intro-content {
+	background-color: rgba(255,255,255,0.7);
+	padding: 20px;
+	width: 300px;
+	margin-left: auto;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5)
+}
+
+.intro-content h2 {
+	margin: 15px 0px 0;
+}
+
+intro-content p {
+	margin: 5px 0 20px;
+}
+
+/*******************
+TEASER STYLES
+*******************/
+.teasers {
+	padding: 20px 0;
+	background-color: #fff;
+}
+
+.teasers ul {
+	padding: 0;
+	margin: 0;
+}
+.teasers-block {
+	float: left;
+	width: 33.3333333%;
+	padding: 20px;
+	list-style: none;
+	border-right: 1px solid #C6C6C6;
+
+}
+
+.teasers-block:last-child {
+	border-right: none;
+}
+
+.teasers-block h2 {
+	line-height: 1.4;
+	margin: 0;
+}
+
+.teasers-block p {
+	padding: 5px 0 20px;
+}
+
+/*******************
+BOXES STYLES
+*******************/
+
+.boxes {
+	float: left;
+	width: 25%;
+}
+
+.boxes article {
+	background: white;
+	margin: 10px;
+	padding: 10px;
+}
+
+
+.profile_page {
+	background: #C6C6C6;
+	padding: 10px;
+}
+
+.skills {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.skills li {
+	float: left;
+	list-style-type: none;
+}
+
+.skills li a {
+	display: block;
+	background: #696969;
+	padding: 1px 12px;
+	border-radius: 100px;
+	font-size: 19px;
+	margin: 0 5px 5px 0;
+	color: #fff;
+	}
+
+
+.profiles img {
+	max-width: 100%;
+}
+
+
+
+/*******************
+CONTACT BUTTON STYLES
+*******************/
+
+.button {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: bold;
+	background: #FFF653;
+	color: #000;
+	padding: 12px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	display: block;
+	text-align: center;
+	}
+
+
+footer {
+	background-color: #000;
+	color: #fff;
+	padding: 2% 3%;
+	height: 100px;
+	clear: both;
+}
